@@ -1,0 +1,100 @@
+<html>
+<head>
+  
+  <link type="text/css" rel="stylesheet" href="main.css" />
+  <title> What is the best pop singer? </title>
+  <script>
+    function banner(){
+      var text = confirm() ("Katy Perry");
+      return text;
+    }
+    
+    function answer(){
+      var radio= document.getElementsByName("trivia");
+      var selection=false;
+      var message = "";
+      for( var i = 0; i < radio.length; i++) {
+        if(radio[i].value == "yes" && radio[i].checked == true)
+         selection=true;
+      } //end if statement
+     } //end for loop
+     
+     if(selection == true) {
+       message = message + "<b><p style='color:pink'>Way to go!
+       </p></b>";
+     } else {
+       message = message + "<b><p style='color:blue'>Try again my friend.</p></b>
+     }
+      
+      document.getElementById("response").innerHTML = message;
+      
+      
+    } //end function answer
+  </script>
+  
+  
+  <style>
+  p{
+    color:red;
+    font-size:20px;
+  }
+</style>
+
+</head>
+<body> id="background">
+
+<a onclick="return banner()" href=https://www.katyperry.com/>
+<header id="header"> Katy Perry </header>
+</a>
+
+<nav>
+  <ul id="navmenu">
+    <li class="navitem"> <a href="index.html"> Home </a> </li>
+    <li class="navitem"> <a href="games.html"> Games </a> </li>
+    <li class="navitem"> <a href="videos.html"> Videos </a> </li>
+    </ul>
+</nav>
+
+<h1>Best pop singer</h1>
+
+<p> <span class="wrap-text">I think the best pop singer</span> is <b>Katy Perry</b>. I think this because she has great lyrics, she is very beautiful, and she has amazing vocals. Also she has some of the most amazing songs ever like <u>thinking of you, teenage dream, firework, roar, and wide awake.
+
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio>
+
+</u> Those are just some of her most popular songs. </p>
+<div class="wrap-list">
+<ol>
+  <li class="listitem">Katy Perry has a great personality.</li>
+  <li class="listitem">She has a partner named Orlando Bloom.</li>
+  <li class="listitem">Lastly, her parents are pentecostol preachers.</li>
+  </ol>
+</div>
+  
+  <h2> Katy Perry's Daughter Trivia Question: </h2>
+  
+  <div class="wrap-trivia">
+  <p class="paragraph">What is Katy Perry's daughters name?</p>
+  </div>
+  
+  <form>
+    <div id="response"> </div>
+  <input type="radio" name="trivia" value="no"> Abby Anne Bloom <br>
+  <input type="radio" name="trivia" value="no"> Heather White Bloom  <br>
+  <input type="radio" name="trivia" value="yes"> Daisy Dove Bloom  <br>
+  <input type="radio" name="trivia" value="no"> Faith Jameson Bloom <br>
+  <input onclick="answer()" type="button" id="submit" value="Click Here">
+  </form>
+
+  <img src="https://thumbs.dreamstime.com/z/katy-perry-25587837.jpg?w=576" />
+  <img src="https://thumbs.dreamstime.com/z/orlando-bloom-26358197.jpg?ct=jpeg" />
+  <hr />
+  
+  <center> Payton Holt <a href="https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese">Mac N Cheese Recipe</a> </center>
+  <footer id="footer"> Payton Holt </footer>
+  
+  <iframe width="500" height="320"
+   src="https://www.google.com/search?sca_esv=4b48ab93829afc9b&sca_upv=1&rlz=1CAOEMI_enUS1072&q=katy+perry+documentary+trailer&tbm=vid&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWfbQph1uib-VfD_izZO2Y5sC3UdQE5x8XNnxUO1qJLaRIaEtzaSH-OhiOhqt_msDm5okqi8cL1oZ65TIjTcqv6azFidSva4OO4g1BMYux9zUltOlIzMIOTTYeSrX4IzNFab3yVTmL7J6PkIWNsJL6mH0NZfJvw8JTAqCVy_7eE94-W_CkmGBe6Ug47YuSSGxEYH-ndg&sa=X&ved=2ahUKEwiw9NfnnqyIAxVcM9AFHWjPDQYQ0pQJegQIEBAB&biw=683&bih=633&dpr=1&safe=active&ssui=on#"></iframe>
+</body>
+</html>
